@@ -1,12 +1,12 @@
 Summary:	A canvas widget
 Summary(pl.UTF-8):	Widget canvas
 Name:		hippo-canvas
-Version:	0.2.31
+Version:	0.2.34
 Release:	1
 License:	LGPL v2
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/hippo-canvas/0.2/%{name}-%{version}.tar.bz2
-# Source0-md5:	a5df369f4be5494d51bd0c7355c7fc48
+# Source0-md5:	9d39f0e79e7a0c0d95c677c954e3bbdf
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake
 BuildRequires:	cairo-devel
