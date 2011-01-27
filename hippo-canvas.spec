@@ -10,6 +10,7 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/hippo-canvas/0.3/%{name}-%{versi
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake
 BuildRequires:	cairo-devel
+BuildRequires:	docbook-dtd412-xml
 BuildRequires:	glib2-devel >= 1:2.6.0
 BuildRequires:	gtk+2-devel >= 2:2.10.0
 BuildRequires:	gtk-doc >= 1.6
@@ -21,6 +22,7 @@ BuildRequires:	pkgconfig
 BuildRequires:	python-devel
 BuildRequires:	python-pycairo-devel
 BuildRequires:	python-pygtk-devel
+BuildRequires:	rpm-pythonprov
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
