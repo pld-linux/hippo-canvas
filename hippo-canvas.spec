@@ -2,7 +2,7 @@ Summary:	A canvas widget
 Summary(pl.UTF-8):	Widget canvas
 Name:		hippo-canvas
 Version:	0.3.1
-Release:	1
+Release:	2
 License:	LGPL v2
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/hippo-canvas/0.3/%{name}-%{version}.tar.bz2
