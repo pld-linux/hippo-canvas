@@ -2,7 +2,7 @@ Summary:	A canvas widget
 Summary(pl.UTF-8):	Widget canvas
 Name:		hippo-canvas
 Version:	0.3.1
-Release:	4
+Release:	5
 License:	LGPL v2
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/hippo-canvas/0.3/%{name}-%{version}.tar.bz2
@@ -63,6 +63,9 @@ Summary:	The hippo-canvas library API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki hippo-canvas
 Group:		Documentation
 Requires:	gtk-doc-common
+%if "%{_rpmversion}" >= "5"
+BuildArch:	noarch
+%endif
 
 %description apidocs
 The hippo-canvas library API documentation.
@@ -99,7 +102,6 @@ Wiązania Pythona dla hippo-canvas.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
