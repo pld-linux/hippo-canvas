@@ -2,7 +2,7 @@ Summary:	A canvas widget
 Summary(pl.UTF-8):	Widget canvas
 Name:		hippo-canvas
 Version:	0.3.1
-Release:	6
+Release:	7
 License:	LGPL v2
 Group:		X11/Libraries
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/hippo-canvas/0.3/%{name}-%{version}.tar.bz2
@@ -105,7 +105,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm -f $RPM_BUILD_ROOT%{py_sitedir}/hippo.{la,a}
+%{__rm} $RPM_BUILD_ROOT{%{_libdir}/libhippocanvas*.la,%{py_sitedir}/hippo.{la,a}}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -121,7 +121,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libhippocanvas-1.so
-%{_libdir}/libhippocanvas-1.la
 %{_includedir}/hippo-canvas-1
 %{_pkgconfigdir}/hippo-canvas-1.pc
 
