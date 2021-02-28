@@ -63,9 +63,7 @@ Summary:	The hippo-canvas library API documentation
 Summary(pl.UTF-8):	Dokumentacja API biblioteki hippo-canvas
 Group:		Documentation
 Requires:	gtk-doc-common
-%if "%{_rpmversion}" >= "5"
 BuildArch:	noarch
-%endif
 
 %description apidocs
 The hippo-canvas library API documentation.
